@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: rgb(229,193,205);
+    background: linear-gradient(180deg, rgba(229,193,205,1) 0%, rgba(201,187,200,1) 75%, rgba(193,190,207,1) 100%);
+}
+
+a{
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 25px;
+}
+
+.logo-princ{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 25px;
+}
+
+.carousel{
+    margin-top: 8%;
+}
+
+.btn-propio-dto{
+    font-size: 25px;
+    width: 150px;
+    height: 60px;
+}
+
+.price{
+    font-size: 45px;
+}
+
+.deleted{
+    font-size: 30px;
+    text-decoration: line-through;
+}
+
+h1{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+    color: #7e7171;
+    text-decoration: underline;
+}
+
+.card-dto{
+    background-color: #aac9ce;
+    width: 100%;
+ }
+
+ .card{
+    border: solid 0.5px rgb(155, 153, 153);
+    background-color: #aac9ce;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+    margin-bottom: 30px;
+}
+
+.prices{
+    display: flex;
+    justify-content: center;
+}
+
+h6{
+    color: rgb(0, 85, 0);
+    font-size: 40px;
+}
+
+h3{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    color: #7e7171;
+    text-decoration: underline;
+}
+
+.footer-a{
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.img-logo{
+    width: 50px;
+    height: 65px;
+}
+
+.brands{
+    margin-top: 17px;
+    font-size: 20px;
+}
+
+.card-text-propio{
+    font-size: 21px;
+    color: rgb(0, 85, 0);
+}
+
+.dto-h5{
+    color: rgb(0, 85, 0);
+    font-size: 40px;
+    margin-top: 60px;
+    margin-left: 10px;
+}
+
+.dto-h5-2{
+    margin-top: 45px;
+    margin-left: 15px;
+    font-size: 60px;
+}
+
+.card a{
+    transition: all 400ms ease;
+}
+
+.card a:hover{
+    border: 1px solid rgb(255, 255, 255);
+}
+
+
+.card-dto:hover{
+    transform: scale(1.10);
+}
+
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 4);
+    transform: translateY(-3%);
+}
+
+
+@media (min-width: 990px) {
+    .carousel{
+        margin-top: 2%;
+    }
+
+    h1{
+        font-size: 55px;
+    }
+
+    h3{
+        font-size: 45px;
+    }
+    }
