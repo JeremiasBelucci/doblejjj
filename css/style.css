@@ -1,10 +1,10 @@
-            * {
+* {
   margin: 0;
   padding: 0;
 }
 
 body {
-  background: rgb(229, 193, 205);   
+  background: rgb(229, 193, 205);
   background: linear-gradient(180deg, rgb(229, 193, 205) 0%, rgb(201, 187, 200) 75%, rgb(193, 190, 207) 100%);
 }
 
@@ -58,6 +58,7 @@ footer a {
   transform: translateY(-3%);
 }
 .card a {
+  border: 1px solid gray;
   transition: all 400ms ease;
 }
 .card a:hover {
@@ -72,7 +73,7 @@ h6 {
 /* Cards */
 /* DTO */
 .btn-propio-dto {
-  font-size: 25px;
+  font-size: 300px;
   width: 150px;
   height: 60px;
 }
@@ -95,6 +96,49 @@ h6 {
 }
 
 /* DTO */
+.single-product img {
+  margin-top: 18%;
+  width: 100%;
+}
+.single-product h2 {
+  font-size: 29px;
+  font-weight: 700;
+}
+.single-product h6 {
+  font-size: 30px;
+}
+
+.venta {
+  display: flex;
+  flex-direction: row;
+}
+
+.comprar {
+  padding: 1.3em 3em;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  margin-top: 15px;
+}
+.comprar:hover {
+  background-color: #23c483;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+.comprar:active {
+  transform: translateY(-1px);
+}
+
 @media (min-width: 990px) {
   .carousel {
     margin-top: 2%;
@@ -104,6 +148,9 @@ h6 {
   }
   h3 {
     font-size: 45px;
+  }
+  .single-product {
+    margin-top: 10%;
   }
 }
 
