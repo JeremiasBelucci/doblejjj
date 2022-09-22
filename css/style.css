@@ -8,6 +8,42 @@ body {
   background: linear-gradient(180deg, rgb(229, 193, 205) 0%, rgb(201, 187, 200) 75%, rgb(193, 190, 207) 100%);
 }
 
+video, .h1-inicio, .h2-inicio {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+video {
+  object-fit: cover;
+}
+
+.h1-inicio {
+  color: #7e7171;
+  font-size: 300px;
+  font-weight: 900;
+  line-height: 100vh;
+  text-align: center;
+  background: gray;
+  mix-blend-mode: screen;
+  user-select: none;
+}
+
+.h2-inicio {
+  text-decoration: underline;
+  color: #7e7171;
+  position: relative;
+  font-size: 70px;
+  font-weight: 900;
+  user-select: none;
+  margin-top: 33%;
+  mix-blend-mode: luminosity;
+  text-align: center;
+}
+
 h1 {
   font-family: "Josefin Sans", sans-serif;
   font-size: 50px;
@@ -96,7 +132,48 @@ h6 {
 }
 
 /* DTO */
+.single-product img {
+  margin-top: 18%;
+  width: 100%;
+}
+.single-product h2 {
+  font-size: 29px;
+  font-weight: 700;
+}
+.single-product h6 {
+  font-size: 30px;
+}
 
+.venta {
+  display: flex;
+  flex-direction: row;
+}
+
+.comprar {
+  padding: 1.3em 3em;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  margin-top: 15px;
+}
+.comprar:hover {
+  background-color: #23c483;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+.comprar:active {
+  transform: translateY(-1px);
+}
 
 @media (min-width: 990px) {
   .carousel {

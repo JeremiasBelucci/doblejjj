@@ -8,6 +8,46 @@ body{
     background: linear-gradient(180deg, rgba(229,193,205,1) 0%, rgba(201,187,200,1) 75%, rgba(193,190,207,1) 100%);
 }
 
+    //   Inicio
+
+video , .h1-inicio , .h2-inicio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+
+    video{
+        object-fit: cover;
+    }
+
+    .h1-inicio {
+        color: $titulo;
+        font-size: 300px;
+        font-weight: 900;
+        line-height: 100vh;
+        text-align: center;
+        background: gray;
+        mix-blend-mode: screen;
+        user-select: none;
+    }
+
+    .h2-inicio{
+        text-decoration: underline;
+        color: $titulo;
+        position: relative;
+        font-size: 70px;
+        font-weight: 900;
+        user-select: none;
+        margin-top: 33%;
+        mix-blend-mode: luminosity;
+        text-align: center;
+      }
+
+    //   Inicio
+
 h1{
     font-family: 'Josefin Sans', sans-serif;
     font-size: 50px;
@@ -84,7 +124,7 @@ h6{
 /* DTO */
 
 .btn-propio-dto{
-    font-size: 300px;
+    font-size: 30px;
     width: 150px;
     height: 60px;
 }
@@ -157,6 +197,7 @@ h6{
           }
       }
 // COMPRA
+
 
 @media (min-width: 990px) {
     .carousel{
