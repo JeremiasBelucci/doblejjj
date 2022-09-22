@@ -10,6 +10,15 @@ body{
 
     //   Inicio
 
+.inicio-div{
+    display: flex;
+    flex-direction: column;
+}
+
+.inicio-div-2{
+
+}
+
 video , .h1-inicio , .h2-inicio {
     position: absolute;
     top: 0;
@@ -25,7 +34,7 @@ video , .h1-inicio , .h2-inicio {
 
     .h1-inicio {
         color: $titulo;
-        font-size: 300px;
+        font-size: 17rem;
         font-weight: 900;
         line-height: 100vh;
         text-align: center;
@@ -38,12 +47,12 @@ video , .h1-inicio , .h2-inicio {
         text-decoration: underline;
         color: $titulo;
         position: relative;
-        font-size: 70px;
+        font-size: 8rem;
         font-weight: 900;
         user-select: none;
-        margin-top: 37rem;
         mix-blend-mode: luminosity;
         text-align: center;
+        margin-top: 36rem;
       }
 
     //   Inicio
@@ -217,56 +226,42 @@ h6{
 }
 }
 
-@media (min-width: 990px) {
-    .bienvenida-mob{
-        display: none;
+@media (max-width: 990px) {
+    .h1-inicio{
+        font-size: 15rem;
+    }
+    .h2-inicio{
+        font-size: 7rem;
+        margin-top: 35rem;
     }
 }
 
-@media (max-width: 991px) {
-    .video-1{
-        display: none;
-    }
+@media (max-width: 830px) {
     .h1-inicio{
-        display: none;
+        font-size: 12rem;
     }
     .h2-inicio{
-        display: none;
+        font-size: 6rem;
+        margin-top: 34rem;
     }
+}
 
-    video , .h1-inicio-mob , .h2-inicio-mob {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        margin: 0;
-      }
-    
-        video-2{
-            object-fit: cover;
-        }
-    
-        .h1-inicio-mob {
-            color: $titulo;
-            font-size: 120px;
-            font-weight: 900;
-            line-height: 100vh;
-            text-align: center;
-            background: black;
-            mix-blend-mode: screen;
-            user-select: none;
-        }
-    
-        .h2-inicio-mob{
-            text-decoration: underline;
-            color: $titulo;
-            position: relative;
-            font-size: 70px;
-            font-weight: 900;
-            user-select: none;
-            margin-top: 33rem;
-            mix-blend-mode: luminosity;
-            text-align: center;
-          }
+@media (max-width: 650px) {
+    .h1-inicio{
+        font-size: 9rem;
+    }
+    .h2-inicio{
+        font-size: 5rem;
+        margin-top: 33rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .h1-inicio{
+        font-size: 7rem;
+    }
+    .h2-inicio{
+        font-size: 4rem;
+        margin-top: 32rem;
+    }
 }
