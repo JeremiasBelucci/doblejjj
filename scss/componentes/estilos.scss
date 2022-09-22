@@ -29,7 +29,7 @@ video , .h1-inicio , .h2-inicio {
         font-weight: 900;
         line-height: 100vh;
         text-align: center;
-        background: gray;
+        background: black;
         mix-blend-mode: screen;
         user-select: none;
     }
@@ -41,7 +41,7 @@ video , .h1-inicio , .h2-inicio {
         font-size: 70px;
         font-weight: 900;
         user-select: none;
-        margin-top: 33%;
+        margin-top: 37rem;
         mix-blend-mode: luminosity;
         text-align: center;
       }
@@ -215,4 +215,58 @@ h6{
     .single-product{
         margin-top: 10%;
 }
+}
+
+@media (min-width: 990px) {
+    .bienvenida-mob{
+        display: none;
+    }
+}
+
+@media (max-width: 991px) {
+    .video-1{
+        display: none;
+    }
+    .h1-inicio{
+        display: none;
+    }
+    .h2-inicio{
+        display: none;
+    }
+
+    video , .h1-inicio-mob , .h2-inicio-mob {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+      }
+    
+        video-2{
+            object-fit: cover;
+        }
+    
+        .h1-inicio-mob {
+            color: $titulo;
+            font-size: 120px;
+            font-weight: 900;
+            line-height: 100vh;
+            text-align: center;
+            background: black;
+            mix-blend-mode: screen;
+            user-select: none;
+        }
+    
+        .h2-inicio-mob{
+            text-decoration: underline;
+            color: $titulo;
+            position: relative;
+            font-size: 70px;
+            font-weight: 900;
+            user-select: none;
+            margin-top: 33rem;
+            mix-blend-mode: luminosity;
+            text-align: center;
+          }
 }
