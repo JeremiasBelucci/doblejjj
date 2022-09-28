@@ -1,0 +1,11 @@
+@mixin titulo ($size, $weight,) {
+    font-size: $size;
+    font-weight: $weight;
+}
+
+h2{
+    @include titulo (50px, 600);
+    font-family: "Josefin Sans", sans-serif;
+    color: $titulo;
+    text-decoration: underline;
+}

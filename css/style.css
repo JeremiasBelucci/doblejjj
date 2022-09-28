@@ -1,3 +1,34 @@
+h2 {
+  font-size: 50px;
+  font-weight: 600;
+  font-family: "Josefin Sans", sans-serif;
+  color: #7e7171;
+  text-decoration: underline;
+}
+
+.h2-inicio, .h1-inicio {
+  font-weight: 900;
+  text-align: center;
+  user-select: none;
+}
+
+.h1-inicio {
+  color: #7e7171;
+  font-size: 17rem;
+  line-height: 100vh;
+  background: black;
+  mix-blend-mode: screen;
+}
+
+.h2-inicio {
+  text-decoration: underline;
+  color: #7e7171;
+  position: relative;
+  font-size: 8rem;
+  mix-blend-mode: luminosity;
+  margin-top: 31%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -26,34 +57,11 @@ video {
   object-fit: cover;
 }
 
-.h1-inicio {
-  color: #7e7171;
-  font-size: 17rem;
-  font-weight: 900;
-  line-height: 100vh;
-  text-align: center;
-  background: black;
-  mix-blend-mode: screen;
-  user-select: none;
-}
-
-.h2-inicio {
-  text-decoration: underline;
-  color: #7e7171;
-  position: relative;
-  font-size: 8rem;
-  font-weight: 900;
-  user-select: none;
-  mix-blend-mode: luminosity;
-  text-align: center;
-  margin-top: 36rem;
-}
-
 h1 {
   font-family: "Josefin Sans", sans-serif;
-  font-size: 50px;
-  font-weight: 600;
-  color: #7e7171;
+  font-size: 60px;
+  font-weight: 900;
+  color: #796363;
   text-decoration: underline;
 }
 
@@ -70,12 +78,6 @@ a {
 
 .brands {
   margin-top: 17px;
-  font-size: 20px;
-}
-
-footer a {
-  text-decoration: none;
-  font-size: 25px;
 }
 
 /* navbar/footer */
@@ -93,6 +95,9 @@ footer a {
   cursor: default;
   transition: all 400ms ease;
   margin-bottom: 30px;
+}
+.card a {
+  font-family: "Bangers", cursive;
 }
 .card:hover {
   box-shadow: 5px 5px 20px rgb(0, 0, 0);
@@ -113,10 +118,19 @@ h6 {
 
 /* Cards */
 /* DTO */
+h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+  color: #7e7171;
+  text-decoration: underline;
+}
+
 .btn-propio-dto {
   font-size: 30px;
   width: 150px;
   height: 60px;
+  font-family: "Bangers", cursive;
 }
 
 .price {
@@ -128,6 +142,10 @@ h6 {
   text-decoration: line-through;
 }
 
+.dto-title {
+  font-size: 35px;
+}
+
 .card-dto {
   background-color: #aac9ce;
   width: 100%;
@@ -137,49 +155,6 @@ h6 {
 }
 
 /* DTO */
-.single-product img {
-  margin-top: 18%;
-  width: 100%;
-}
-.single-product h2 {
-  font-size: 29px;
-  font-weight: 700;
-}
-.single-product h6 {
-  font-size: 30px;
-}
-
-.venta {
-  display: flex;
-  flex-direction: row;
-}
-
-.comprar {
-  padding: 1.3em 3em;
-  font-size: 11px;
-  text-transform: uppercase;
-  letter-spacing: 2.5px;
-  font-weight: 500;
-  color: #000;
-  background-color: #fff;
-  border: none;
-  border-radius: 45px;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease 0s;
-  cursor: pointer;
-  outline: none;
-  margin-top: 15px;
-}
-.comprar:hover {
-  background-color: #23c483;
-  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
-  color: #fff;
-  transform: translateY(-7px);
-}
-.comprar:active {
-  transform: translateY(-1px);
-}
-
 @media (min-width: 990px) {
   .carousel {
     margin-top: 2%;

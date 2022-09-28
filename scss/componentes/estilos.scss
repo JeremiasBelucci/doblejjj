@@ -15,10 +15,6 @@ body{
     flex-direction: column;
 }
 
-.inicio-div-2{
-
-}
-
 video , .h1-inicio , .h2-inicio {
     position: absolute;
     top: 0;
@@ -32,38 +28,16 @@ video , .h1-inicio , .h2-inicio {
         object-fit: cover;
     }
 
-    .h1-inicio {
-        color: $titulo;
-        font-size: 17rem;
-        font-weight: 900;
-        line-height: 100vh;
-        text-align: center;
-        background: black;
-        mix-blend-mode: screen;
-        user-select: none;
-    }
-
-    .h2-inicio{
-        text-decoration: underline;
-        color: $titulo;
-        position: relative;
-        font-size: 8rem;
-        font-weight: 900;
-        user-select: none;
-        mix-blend-mode: luminosity;
-        text-align: center;
-        margin-top: 36rem;
-      }
-
     //   Inicio
 
-h1{
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 50px;
-    font-weight: 600;
-    color: $titulo;
-    text-decoration: underline;
-}
+    h1{
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 60px;
+        font-weight: 900;
+        color: #796363;
+        text-decoration: underline;
+    }    
+
 
 /* navbar/footer */
 
@@ -79,15 +53,8 @@ a{
 
 .brands{
     margin-top: 17px;
-    font-size: 20px;
 }
 
-footer{
-    a{
-        text-decoration: none;
-        font-size: 25px;
-    }
-}
 
 /* navbar/footer */
 
@@ -101,11 +68,15 @@ footer{
     border: solid 0.5px rgb(155, 153, 153);
     background-color: $celeste-card;
     text-align: center;
-    border-radius: 15px;
+    border-radius: map-get($map: $card , $key:card-borde);
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
     cursor: default;
     transition: all 400ms ease;
     margin-bottom: 30px;
+
+    a{
+        font-family: 'Bangers', cursive;
+    }
 
     &:hover{
         box-shadow: 5px 5px 20px rgba(0, 0, 0, 4);
@@ -132,10 +103,19 @@ h6{
 
 /* DTO */
 
+h2{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+    color: $titulo;
+    text-decoration: underline;
+}
+
 .btn-propio-dto{
     font-size: 30px;
     width: 150px;
     height: 60px;
+    font-family: 'Bangers', cursive;
 }
 
 .price{
@@ -147,6 +127,10 @@ h6{
     text-decoration: line-through;
 }
 
+.dto-title{
+    font-size: 35px;
+}
+
 .card-dto{
     background-color: $celeste-card;
     width: 100%;
@@ -156,56 +140,6 @@ h6{
     }
  }
 /* DTO */
-
-// COMPRA
-
-    .single-product{
-        img{
-            margin-top: 18%;
-            width: 100%;
-        }
-        h2{
-            font-size: 29px;
-            font-weight: 700;
-        }
-        h6{
-            font-size: 30px;
-        }
-    }
-
-    .venta{
-        display: flex;
-        flex-direction: row;
-    }
-
-    .comprar {
-        padding: 1.3em 3em;
-        font-size: 11px;
-        text-transform: uppercase;
-        letter-spacing: 2.5px;
-        font-weight: 500;
-        color: #000;
-        background-color: #fff;
-        border: none;
-        border-radius: 45px;
-        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-        transition: all 0.3s ease 0s;
-        cursor: pointer;
-        outline: none;
-        margin-top: 15px;
-        
-        &:hover {
-            background-color: #23c483;
-            box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
-            color: #fff;
-            transform: translateY(-7px);
-          }
-
-          &:active {
-            transform: translateY(-1px);
-          }
-      }
-// COMPRA
 
 
 @media (min-width: 990px) {
