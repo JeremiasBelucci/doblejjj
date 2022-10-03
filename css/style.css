@@ -76,6 +76,16 @@ a {
   font-size: 25px;
 }
 
+.btn-buscar {
+  color: rgb(56, 56, 56);
+  border: solid 1px #aac9ce;
+}
+.btn-buscar:hover {
+  color: rgb(56, 56, 56);
+  border: solid 1px #7e7171;
+  background-color: #aac9ce;
+}
+
 .brands {
   margin-top: 17px;
 }
@@ -121,6 +131,14 @@ h6 {
 h2 {
   font-family: "Josefin Sans", sans-serif;
   font-size: 50px;
+  font-weight: 600;
+  color: #7e7171;
+  text-decoration: underline;
+}
+
+h3 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 40px;
   font-weight: 600;
   color: #7e7171;
   text-decoration: underline;

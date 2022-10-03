@@ -51,6 +51,17 @@ a{
     font-size: 25px;
 }
 
+.btn-buscar{
+    color: rgb(56, 56, 56);
+    border: solid 1px $celeste-card;
+
+    &:hover{
+        color: rgb(56, 56, 56);
+        border: solid 1px $titulo;
+        background-color: $celeste-card;
+    }
+}
+
 .brands{
     margin-top: 17px;
 }
@@ -106,6 +117,14 @@ h6{
 h2{
     font-family: 'Josefin Sans', sans-serif;
     font-size: 50px;
+    font-weight: 600;
+    color: $titulo;
+    text-decoration: underline;
+}
+
+h3{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 40px;
     font-weight: 600;
     color: $titulo;
     text-decoration: underline;
