@@ -10,22 +10,13 @@ body{
 
     //   Inicio
 
-.inicio-div{
-    display: flex;
-    flex-direction: column;
-}
-
-video , .h1-inicio , .h2-inicio {
+video , .h1-inicio{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     margin: 0;
-  }
-
-  .h2-inicio{
-    margin-top: 62vh;
   }
 
     video{
