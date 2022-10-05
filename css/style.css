@@ -53,6 +53,10 @@ video, .h1-inicio, .h2-inicio {
   margin: 0;
 }
 
+.h2-inicio {
+  margin-top: 62vh;
+}
+
 video {
   object-fit: cover;
 }
@@ -73,7 +77,6 @@ a {
 
 .logo-princ {
   font-family: "Noto Sans JP", sans-serif;
-  font-size: 25px;
 }
 
 .btn-buscar {
@@ -173,6 +176,56 @@ h3 {
 }
 
 /* DTO */
+.container-form-dad {
+  display: flex;
+  justify-content: center;
+}
+
+.container-form {
+  width: 50%;
+  height: 93vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-form {
+  background-image: url(/img/pjs.jpg);
+  background-size: 100%;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  padding: 2vw 4vw;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 10px;
+}
+.contact-form h3 {
+  color: black;
+  font-weight: 1000;
+  margin-bottom: 5%;
+  background-color: rgba(155, 155, 155, 0.08);
+}
+.contact-form input, .contact-form textarea {
+  border: 0;
+  margin: 2% 0;
+  padding: 1%;
+  outline: none;
+  background: #f5f5f5;
+  font-size: 16px;
+}
+.contact-form button {
+  padding: 3%;
+  background: #7786be;
+  color: #fff;
+  font-size: 125%;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  margin: 20px 0;
+  border-radius: 30px;
+}
+
 @media (min-width: 990px) {
   .carousel {
     margin-top: 2%;
@@ -195,6 +248,9 @@ h3 {
     font-size: 7rem;
     margin-top: 35rem;
   }
+  .container-form {
+    width: 150%;
+  }
 }
 @media (max-width: 830px) {
   .h1-inicio {
@@ -212,6 +268,13 @@ h3 {
   .h2-inicio {
     font-size: 5rem;
     margin-top: 33rem;
+  }
+  .container-form {
+    width: 150%;
+    height: 93vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 @media (max-width: 480px) {

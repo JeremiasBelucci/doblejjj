@@ -6,30 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Si estás interesado en comprar merchandising de Anime, DobleJj es tu tienda ideal para conseguirlo!">
     <link rel="icon" href="../img/favicon.ico">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a8baf94fc0.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
-    <title>DobleJj</title>
+    <script src="https://kit.fontawesome.com/a8baf94fc0.js" crossorigin="anonymous"></script>
+    <title>DobleJj | Tu tienda de anime favorita</title>
 </head>
 <body>
-     <!-- NAVBAR -->
+ <!-- NAVBAR -->
  <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #93919e">
     <div class="container-fluid">
         <div>
       <a class="navbar-brand logo-princ" href="main.html">
-        <img src="../img/logo.png" alt="" width="35" height="40" class="d-inline-block align-text-center">
-        DobleJj
+        <img src="../img/logo.png" alt="El Sin Cara - El viaje de Chihiro estudio Ghibli" width="35" height="40" class="d-inline-block align-text-center">DobleJj
       </a>
-    </div>
+        </div>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarScroll">
-        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+        <ul class="navbar-nav me-auto my-2 my-lg-0" style="--bs-scroll-height: 100px;">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="main.html">Inicio</a>
           </li>
@@ -48,7 +49,7 @@
               <li><a class="dropdown-item" href="mousepads.html">Mousepads</a></li>
               <li><a class="dropdown-item" href="fundas.html">Fundas</a></li>
               <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="main.html">Ver todo</a></li>
+              <li><a class="dropdown-item" href="#productos">Ver todos</a></li>
             </ul>
           </li>
         </ul>
@@ -60,18 +61,29 @@
     </div>
   </nav>
   <!-- NAVBAR -->
-        <!-- Contenido -->
-        <!-- Contenido -->
-</body>
-                <!-- Footer -->
-        <footer class="text-white" style="background-color: #93919e">
-            <div class="container">
-                <div class="row">
-                <a href="#" class="col-3 text-reset textuppercase d-flexbox align-items-center footer-a">
-                    <img src="../img/logo.png" alt="Logo" width="45" height="50" class="img-logo mr-2">
-                </a>
+  <!-- Contenido -->
+  <div class="container-form-dad">
+  <div class="container-form">
+    <form class="contact-form">
+      <h3 class="contact-h3">Contacto</h3>
+      <input type="text" id="name" placeholder="Tu nombre" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="text" id="phone" placeholder="Teléfono" required>
+      <textarea id="message" rows="4" placeholder="Mensaje"></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+</div>
+  <!-- Contenido -->
+            <!-- Footer -->
+            <footer class="text-white" style="background-color: #93919e">
+                <div class="container">
+                  <div class="row">
+                    <a href="#" class="col-3 text-reset textuppercase d-flexbox align-items-center footer-a">
+                      <img src="../img/logo.png" alt="Logo" width="45" height="50" class="img-logo mr-2">
+                    </a>
                     <ul class="col-9 list-unstyled brands">
-                    <li>
+                      <li class="">
                         <div class="d-flex justify-content-around">
                             <a href="">
                             <i class="fa-brands fa-facebook-f"></i>
@@ -83,12 +95,16 @@
                             <i class="fa-brands fa-twitter"></i>
                             </a>
                         </div>
-                    </li>
+                      </li>
                     </ul>
+                  </div>
                 </div>
-            </div>
-            </footer>
-            <!-- Footer -->
+              </footer>
+                <!-- Footer -->
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-            </body>
-            </html>
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+            <script>
+              AOS.init();
+            </script>
+        </body>
+        </html>
