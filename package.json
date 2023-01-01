@@ -1,7 +1,0 @@
-{
-  "dependencies": {
-    "aos": "^2.3.4",
-    "node-sass": "^7.0.3",
-    "nodemon": "^2.0.20"
-  }
-}
